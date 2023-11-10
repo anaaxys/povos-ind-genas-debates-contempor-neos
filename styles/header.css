@@ -28,9 +28,13 @@
     align-items: center;
 }
 
+.container__tristeza {
+    width: 9%;
+    padding: 1em
+}
+
 .container__imagem {
     padding: 1em;
-    width: 15%;
 }
 
 .lista-menu {

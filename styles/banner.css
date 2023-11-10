@@ -1,8 +1,26 @@
 .banner {
-    background: var(--verde-claro);
+    position: relative;
     color: var(--branco);
     text-align: center;
     padding: 2.5em 2em;
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-image: url(../img/povos-tradicionais.jpg); 
+    /* filter: sepia(0.7);  sla oq é sepia*/ 
+    /* filter: saturate(1.5); saturação*/
+    /* filter: contrast(1.2); da pra ler sapoha*/
+    /* filter: blur(2px); borrado */
+    filter: brightness(0.8); /* preto */
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
 }
 
 .banner__titulo {
