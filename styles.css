@@ -16,9 +16,10 @@
     --preto: #000000;
     --cinza: #474646;
     --cinza-claro: #858585;
-    --verde-indio: #485544;
-    --verdinho: #182517;
-    --verde-claro: #616c5b;
+    --verde-meio: #215b31;
+    --verde-claro: #50885b;
+    --verde-forte: #215b31;
+    --verde-mais: #09441c;
 }
 
 body {
