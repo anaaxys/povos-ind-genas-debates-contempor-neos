@@ -50,8 +50,10 @@
 
 .lista-menu__titulo, 
 .lista-menu__item {
-    padding: 1em;
+    position: relative;
+    padding: 1vw;
     background-color: var(--branco);
+    z-index: 1;
 }
 
 .lista-menu__link {
