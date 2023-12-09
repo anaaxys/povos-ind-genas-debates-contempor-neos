@@ -28,3 +28,31 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+.scrollitem {
+    filter: opacity(0);
+    transition: .75s ease-in-out;
+}
+
+.scrollitem.scrollou {
+    filter: opacity(1);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: .575vw;
+    position: fixed;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .1vw;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+    background-color: var(--cor-principal);
+}

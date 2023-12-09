@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Povos Indígenas</title>
+        <link rel="icon" href="img/indigena.png">
         <link rel="stylesheet" href="reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +13,18 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">  
+        <script src="js/main.js" defer></script>
     </head>
 
     <body> 
-        <header class="cabeçalho">
+        <header class="cabeçalho scroll_header">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botão">
             <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
-                <li class="lista-menu__titulo">Cultura</li>
+                <li class="lista-menu__titulo a_text">Cultura</li>
                 <li class="lista-menu__item"> 
                     <a href="#" class="lista-menu__link">Linguagem</a> 
                 </li>
@@ -40,13 +42,13 @@
                 </li>
             </ul>
                 <img src="img/indigena.png" alt="Logo dos povos indígenas" class="container__tristeza">
-                <h1 class="container__titulo"><b class="container__titulo--negrito">Povos</b>Indígenas</h1>    
+                <h1 class="container__titulo a_text"><b class="container__titulo--negrito">Povos</b>Indígenas</h1>    
             </div>
 
             <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
             <label for="opções-menu" class="opções__rotulo">
-                <li class="opções__item">Cultura</li>
+                <li class="opções__item a_text">Cultura</li>
             </label>
 
             <ul class="lista-menu">
@@ -67,8 +69,8 @@
                 </li>
             </ul>
 
-                <li class="opções__item"><a href="#" class="opções__link">Debates</a></li>
-                <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+                <li class="opções__item"><a href="#debates" class="opções__link"><span class="a_text">Debates</span></a></li>
+                <li class="opções__item"><a href="#" class="opções__link"><span class="a_text">Favoritos</span></a></li>
             </ul>
 
             <div class="container">
@@ -102,15 +104,11 @@
                 <div class="swiper-slide"><img src="img/foto 2.png" alt="Preservação Cultural e Linguística"></div>
                 <div class="swiper-slide"><img src="img/foto nova.png" alt="Conflitos Ambientais e Desenvolvimento"></div>
             </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
             
-        <div class="card">
+        <div class="card scrollitem">
             <!-- 1º linha -->
-            <div class="card__descrição">
+            <div class="card__descrição conteudo">
                 <!-- 1º coluna -->
                 <div class="descrição">
                     <h3 class="descrição__titulo">Nova lei sobre terras indígenas</h3>
@@ -137,7 +135,7 @@
         </section>
 
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Debates Destaques</h2>
+            <h2 class="carrossel__titulo" id="debates">Debates Destaques</h2>
             <!-- Slider main container -->
             <div class="carrossel__container">
             <div class="swiper">
@@ -158,9 +156,9 @@
                 <div class="swiper-button-next"></div>
             </div>
         
-            <div class="card">
+            <div class="card scrollitem">
                 <!-- 1º linha -->
-                <div class="card__descrição">
+                <div class="card__descrição conteudo">
                     <!-- 1º coluna -->
                     <div class="descrição">
                         <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
@@ -189,7 +187,7 @@
         </div>
         </section>
 
-        <section class="tópicos">
+        <section class="tópicos scrollitem">
             <h2 class="tópicos__titulo"><strong>TÓPICOS VISITADOS RECENTEMENTE</strong></h2>
             <ul class="tópicos__lista">
                 <li class="tópicos__item">
@@ -230,7 +228,7 @@
         <hr />
 
         <footer class="rodapé">
-            <h2 class="rodapé__titulo">Grupo: Ana, Marcieli e Vitor</h2>
+            <h2 class="rodapé__titulo">Grupo: Ána, Marcelo e Vitorino</h2>
             <ul class="lista-rodapé">
                 <li class="lista-rodapé__titulo">Educação</li>
                 <li class="lista-rodapé__item">
